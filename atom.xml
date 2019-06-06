@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huasing.me/</id>
     <title>Huasing</title>
-    <updated>2019-06-06T10:18:50.112Z</updated>
+    <updated>2019-06-06T10:20:56.107Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huasing.me/"/>
     <link rel="self" href="https://huasing.me//atom.xml"/>
