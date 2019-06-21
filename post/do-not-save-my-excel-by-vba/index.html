@@ -1,9 +1,11 @@
+
+<!DOCTYPE html>
 <html>
   <head>
     
 <meta charset="utf-8" >
 
-<title>Huasing</title>
+<title>通过宏禁止Excel文件的保存 | Huasing</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -75,32 +77,54 @@
 </transition>
 
 
-        <div class="content-container">
+      <div class="content-container">
+        <div class="post-detail">
           
-          
+          <h2 class="post-title">通过宏禁止Excel文件的保存</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-06-21</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://huasing.me//tag/excel">
+                    Excel
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://huasing.me//tag/vba">
+                    VBA
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>在工作中，一些Excel表格只用于查询和临时修改，实际并不需要修改保存。为避免一时手残给保存了，就需要做出限制。<!-- more --></p>
+<p>VBA<strong>设计模式</strong>下，在ThisWorkbook中插入VBA代码：</p>
+<pre><code>Private Sub Workbook_BeforeClose(Cancel As Boolean)
+Me.Saved = True
+End Sub
 
-<div class="archives-container">
-  
-    <h2 class="year">2019</h2>
-    
-      
-        <article class="post">
-          <a href="https://huasing.me//post/do-not-save-my-excel-by-vba">
-            <h2 class="post-title">
-              通过宏禁止Excel文件的保存
-              <small>2019-06-21</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-  
-</div>
+Private Sub Workbook_BeforeSave(ByVal SaveAsUI As Boolean, Cancel As Boolean)
+Cancel = True
+End Sub
 
+</code></pre>
+<p>保存后返回Excel即可。</p>
 
+          </div>
         </div>
 
-        <div class="site-footer">
+        
+      </div>
+
+      
+
+      <div class="site-footer">
   <div class="slogan"></div>
   <div class="social-container">
     
@@ -119,8 +143,8 @@
 </div>
 
 
-      </div>
-      <script type="application/javascript">
+    </div>
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
 
@@ -136,6 +160,5 @@ var app = new Vue({
 
 
 
-    </div>
   </body>
 </html>

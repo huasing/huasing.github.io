@@ -2,11 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huasing.me/</id>
     <title>Huasing</title>
-    <updated>2019-06-06T14:43:24.651Z</updated>
+    <updated>2019-06-21T13:48:06.827Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huasing.me/"/>
     <link rel="self" href="https://huasing.me//atom.xml"/>
     <logo>https://huasing.me//images/avatar.png</logo>
     <icon>https://huasing.me//favicon.ico</icon>
     <rights>All rights reserved 2019, Huasing</rights>
+    <entry>
+        <title type="html"><![CDATA[通过宏禁止Excel文件的保存]]></title>
+        <id>https://huasing.me//post/do-not-save-my-excel-by-vba</id>
+        <link href="https://huasing.me//post/do-not-save-my-excel-by-vba">
+        </link>
+        <updated>2019-06-21T13:01:58.000Z</updated>
+    </entry>
 </feed>
